@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/TonMobile.cs \
+obj\Debug\net5.0\Protos/TonMobileGrpc.cs: Protos/ton_mobile.proto

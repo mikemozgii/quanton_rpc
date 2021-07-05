@@ -1,0 +1,9 @@
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\bin\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.deps.json
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\bin\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.dll
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\bin\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.pdb
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\obj\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.AssemblyInfoInputs.cache
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\obj\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.AssemblyInfo.cs
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\obj\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.csproj.CoreCompileInputs.cache
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\obj\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.dll
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\obj\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.pdb
+C:\Users\mikek\Source\Repos\quanton_grpc\TONBRAINS.QUANTON\TONBRAINS.QUANTON.Core\obj\Debug\netcoreapp3.1\TONBRAINS.QUANTON.Core.csprojAssemblyReference.cache

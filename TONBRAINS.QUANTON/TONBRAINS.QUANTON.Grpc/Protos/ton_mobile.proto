@@ -1,0 +1,160 @@
+syntax = "proto3";
+
+option csharp_namespace = "TONBRAINS.QUANTON.Grpc";
+
+package ton_mobile;
+
+service TonMobile {
+  rpc SignIn (SignInRequest) returns (SignInReply);
+  rpc PublicSecretKeySignIn (PublicSecretKeySignInRequest) returns (SignInReply);
+  rpc MnemonicPhraseSignIn (MnemonicPhraseSignInRequest) returns (SignInReply);
+  rpc Test (TestRequest) returns (TestReply);
+  rpc GetSmartAccount (GetSmartAccountRequest) returns (GetSmartAccountReply);
+  rpc GetBalance (GetBalanceRequest) returns (GetBalanceReply);
+  rpc TransferBalance (TransferBalanceRequest) returns (TransferBalanceReply);
+  rpc TransferLogs (TransferLogsRequest) returns (TransferLogsReply);
+  rpc Payment (PaymentRequest) returns (PaymentReply);
+  rpc GetAnnouncements (AnnouncementsRequest) returns (AnnouncementsReply);
+  rpc SetTransferStatus (SetTransferStatusRequest) returns (SetTransferStatusReply);
+  rpc SaveIssue (SaveIssueRequest) returns (SaveIssueReply);
+  rpc ReceiveToken (ReceiveTokenRequest) returns (ReceiveTokenReply);
+  rpc ExistContacts (ExistContactsRequest) returns (ExistContactsReply);
+  rpc AppVersion (AppVersionRequest) returns (AppVersionReply);
+}
+
+
+message AppVersionRequest {
+}
+
+message AppVersionReply {
+  string version = 1;
+}
+
+message PaymentRequest {
+string nonce =1;
+string clientData =2;
+string amount =3;
+}
+
+message PaymentReply {
+bool success =1;
+}
+
+message SignInRequest {
+  string data = 1;
+  string id = 2;
+  string user_name = 3;
+}
+
+message PublicSecretKeySignInRequest {
+  string public_key = 1;
+  string secret_key = 2;
+}
+
+message MnemonicPhraseSignInRequest{
+	string phrase = 1;
+}
+
+message SignInReply {
+  string token = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message TestRequest {}
+
+message TestReply {}
+
+message GetSmartAccountRequest {}
+
+message GetSmartAccountReply {
+  string address = 1;
+  string mnemonicPhrase = 2;
+  string publicKey = 3;
+  string secretKey = 4;
+}
+
+message GetBalanceRequest {}
+
+message GetBalanceReply {
+  int64 balance = 1;
+}
+
+message TransferBalanceRequest {
+  int64 amount = 1;
+  string email = 2;
+  string phone = 3;
+}
+
+message TransferBalanceReply {
+  string token = 1;
+}
+
+message TransferLogsRequest {
+}
+
+message TransferLogsReply {
+  repeated TransferLogs transferLogs = 1;
+}
+
+message TransferLogs {
+  string id = 1;
+  string time = 2;
+  string date = 3;
+  int64 amount = 4;
+  string status = 5;
+  string email = 6;
+  string phone = 7;
+  bool isPayment = 8;
+  bool isRecipient = 9;
+}
+
+message AnnouncementsRequest {}
+
+message AnnouncementItem {
+	string id = 1;
+	string title = 2;
+	string data = 3;
+	int64 date = 4;
+	string url = 5;
+}
+
+message AnnouncementsReply {
+	repeated AnnouncementItem items = 1;
+}
+
+message SaveIssueRequest {
+	string title = 1;
+	string description = 2;
+	map<string, string> files = 3;
+}
+message SaveIssueReply {
+	string message = 1;
+}
+
+message SetTransferStatusRequest {
+  string id = 1;
+  string status = 2;
+}
+
+message SetTransferStatusReply {
+  string status = 1;
+}
+
+message ReceiveTokenRequest {
+  string token = 1;
+}
+
+message ReceiveTokenReply {
+  bool ok = 1;
+}
+
+message ExistContactsRequest {
+  repeated string emails = 1;
+  repeated string phones = 2;
+}
+
+message ExistContactsReply {
+  repeated string emails = 1;
+  repeated string phones = 2;
+}

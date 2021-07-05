@@ -1,0 +1,2 @@
+obj\Release\net5.0\win-x64\Protos/TonMobile.cs \
+obj\Release\net5.0\win-x64\Protos/TonMobileGrpc.cs: Protos/ton_mobile.proto
